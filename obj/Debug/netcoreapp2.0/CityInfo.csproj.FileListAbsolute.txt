@@ -8,3 +8,13 @@ C:\Users\sarmife\Sandbox\CityInfo\obj\Debug\netcoreapp2.0\CityInfo.AssemblyInfoI
 C:\Users\sarmife\Sandbox\CityInfo\obj\Debug\netcoreapp2.0\CityInfo.AssemblyInfo.cs
 C:\Users\sarmife\Sandbox\CityInfo\obj\Debug\netcoreapp2.0\CityInfo.dll
 C:\Users\sarmife\Sandbox\CityInfo\obj\Debug\netcoreapp2.0\CityInfo.pdb
+D:\SandBox\CityInfo\bin\Debug\netcoreapp2.0\CityInfo.deps.json
+D:\SandBox\CityInfo\bin\Debug\netcoreapp2.0\CityInfo.runtimeconfig.json
+D:\SandBox\CityInfo\bin\Debug\netcoreapp2.0\CityInfo.runtimeconfig.dev.json
+D:\SandBox\CityInfo\bin\Debug\netcoreapp2.0\CityInfo.dll
+D:\SandBox\CityInfo\bin\Debug\netcoreapp2.0\CityInfo.pdb
+D:\SandBox\CityInfo\obj\Debug\netcoreapp2.0\CityInfo.csproj.CoreCompileInputs.cache
+D:\SandBox\CityInfo\obj\Debug\netcoreapp2.0\CityInfo.AssemblyInfoInputs.cache
+D:\SandBox\CityInfo\obj\Debug\netcoreapp2.0\CityInfo.AssemblyInfo.cs
+D:\SandBox\CityInfo\obj\Debug\netcoreapp2.0\CityInfo.dll
+D:\SandBox\CityInfo\obj\Debug\netcoreapp2.0\CityInfo.pdb
