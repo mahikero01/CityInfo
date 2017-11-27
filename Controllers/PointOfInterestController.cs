@@ -1,4 +1,5 @@
 using CityInfo.API.Models;
+using CityInfo.API.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.Extensions.Logging;
@@ -10,11 +11,15 @@ namespace CityInfo.API.Controllers
     [Route("api/cities")]
     public class PointOfInterestController : Controller
     {
+        //injecting a service then declare them in constructor
         private ILogger<PointOfInterestController> _logger;
-
-        public PointOfInterestController (ILogger<PointOfInterestController> logger)
+        private IMailService _mailService;
+        //injecting a servicethen declare them in constructor
+        public PointOfInterestController (ILogger<PointOfInterestController> logger,
+                IMailService mailService)
         {
             _logger = logger;
+            _mailService = mailService;
         }
 
         [HttpGet("{cityId}/pointsofinterest")]
@@ -22,7 +27,7 @@ namespace CityInfo.API.Controllers
         {
             try 
             {
-                throw new Exception("Exception Problem");
+                //throw new Exception("Exception Problem");
 
                 var city = CitiesDatastore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
 
@@ -214,6 +219,11 @@ namespace CityInfo.API.Controllers
             }
 
             city.PointsOfInterest.Remove(pointOfInterestFromStore);
+
+            //use the service injected
+            _mailService.Send("Pint of interest deleted",
+                    $"Point of interest {pointOfInterestFromStore.Name} with id {pointOfInterestFromStore.Id} was deleted.");
+            //use the service injected
 
             return NoContent();
         }

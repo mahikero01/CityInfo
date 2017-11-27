@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CityInfo.API.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
-
+using NLog.Extensions.Logging;
 
 namespace CityInfo
 {
@@ -35,13 +36,28 @@ namespace CityInfo
             //             castedResolver.NamingStrategy = null;
             //     }
             // });
+
+            //adding a customized service 
+
+            //this use in Staging
+            services.AddTransient<IMailService, LocalMailService>();
+
+            //this is use to Prod
+            //services.AddTransient<IMailService, CloudMailService>();
+            
+            //adding a customized service
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            //logging system configuration
             loggerFactory.AddConsole();
             loggerFactory.AddDebug();
+            //loggerFactory.AddProvider(new NLog.Extensions.Logging.NLogLoggerProvider());
+            loggerFactory.AddNLog();
+            ConfigureExtensions.ConfigureNLog(loggerFactory, "../../../nlog.config");
+            //logging system configuration
 
             if (env.IsDevelopment())
             {
