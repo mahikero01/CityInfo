@@ -26,6 +26,8 @@
           "Microsoft.AspNetCore.All": "2.0.3",
           "Microsoft.AspNetCore.Mvc.Core": "2.0.1",
           "Microsoft.AspNetCore.Mvc.Formatters.Xml": "2.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.1",
+          "Microsoft.EntityFrameworkCore.Tools": "2.0.1",
           "Microsoft.NETCore.App": "2.0.0",
           "NLog.Extensions.Logging": "1.0.0-rtm-rc2"
         },

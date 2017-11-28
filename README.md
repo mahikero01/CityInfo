@@ -13,7 +13,9 @@ $ dotnet add package Microsoft.AspNetCore.Mvc.Formatters.Xml --version 2.0.1  ->
 
 $ dotnet add package NLog.Extensions.Logging --version 1.0.0-rtm-rc2  -> file logger
 
+$ dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 2.0.1  -> add entity framework core
 
+$ dotnet add package Microsoft.EntityFrameworkCore.Tools.DotNet --version 2.0.1  - add entity framework tools
 
 To change deployment go to 
 Debug -> Open configurations -> "env": {

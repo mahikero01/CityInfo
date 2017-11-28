@@ -1,4 +1,5 @@
 ﻿using CityInfo.API.Services;
+using CityInfo.API.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.Json;
 using Microsoft.Extensions.DependencyInjection;
@@ -57,15 +59,19 @@ namespace CityInfo
             //     }
             // });
 
-            //adding a customized service 
-
+            //adding a customized service
             //this use in Staging
             services.AddTransient<IMailService, LocalMailService>();
 
             //this is use to Prod
             //services.AddTransient<IMailService, CloudMailService>();
-            
             //adding a customized service
+
+            //adding Entity Framework Service
+            var connectionString = @"Server=B04SQLD50\JHEADEV8R2; Database=dbbtCARSAp1; Trusted_Connection=True";
+            //var connectionString = @"Data Source=B04SQLD50\JHEADEV8R2; Initial Catalog=dbbtCARSAp1; Integrated Security=True";
+            services.AddDbContext<CityInfoContext>(o => o.UseSqlServer(connectionString));
+            //adding Entity Framework Service
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

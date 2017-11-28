@@ -1761,6 +1761,19 @@
           "lib/netstandard2.0/_._": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Tools.DotNet/2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.0.3",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/dotnet-ef.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/dotnet-ef.dll": {}
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -6281,6 +6294,22 @@
         "tools/net461/ef.exe.config",
         "tools/net461/ef.x86.exe",
         "tools/net461/ef.x86.exe.config",
+        "tools/netcoreapp2.0/ef.dll",
+        "tools/netcoreapp2.0/ef.runtimeconfig.json"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Tools.DotNet/2.0.1": {
+      "sha512": "q2+sUpyX/YoMVyUt69zuRXPfpfzMBrol+F9L/3qfVytBKieywCoW9js1pb0gCs6vvBvoshCnjcUFCSqixqOpIA==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.tools.dotnet/2.0.1",
+      "files": [
+        "lib/netcoreapp2.0/dotnet-ef.dll",
+        "lib/netcoreapp2.0/dotnet-ef.runtimeconfig.json",
+        "microsoft.entityframeworkcore.tools.dotnet.2.0.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.dotnet.nuspec",
+        "prefercliruntime",
+        "tools/net461/ef.exe",
+        "tools/net461/ef.x86.exe",
         "tools/netcoreapp2.0/ef.dll",
         "tools/netcoreapp2.0/ef.runtimeconfig.json"
       ]
@@ -12965,6 +12994,8 @@
       "Microsoft.AspNetCore.All >= 2.0.3",
       "Microsoft.AspNetCore.Mvc.Core >= 2.0.1",
       "Microsoft.AspNetCore.Mvc.Formatters.Xml >= 2.0.1",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 2.0.1",
+      "Microsoft.EntityFrameworkCore.Tools.DotNet >= 2.0.1",
       "Microsoft.NETCore.App >= 2.0.0",
       "NLog.Extensions.Logging >= 1.0.0-rtm-rc2"
     ]
@@ -12976,11 +13007,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\sarmife\\Sandbox\\CityInfo\\CityInfo.csproj",
+      "projectUniqueName": "C:\\Users\\sarmife\\Sandbox\\CityInfo\\CityInfo.csproj",
       "projectName": "CityInfo",
-      "projectPath": "c:\\Users\\sarmife\\Sandbox\\CityInfo\\CityInfo.csproj",
+      "projectPath": "C:\\Users\\sarmife\\Sandbox\\CityInfo\\CityInfo.csproj",
       "packagesPath": "C:\\Users\\sarmife\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\sarmife\\Sandbox\\CityInfo\\obj\\",
+      "outputPath": "C:\\Users\\sarmife\\Sandbox\\CityInfo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13025,6 +13056,14 @@
             "target": "Package",
             "version": "2.0.1"
           },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "2.0.1"
+          },
+          "Microsoft.EntityFrameworkCore.Tools.DotNet": {
+            "target": "Package",
+            "version": "2.0.1"
+          },
           "NLog.Extensions.Logging": {
             "target": "Package",
             "version": "1.0.0-rtm-rc2"
@@ -13037,5 +13076,16 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: Microsoft.NETCore.App from 2.0.3 to 2.0.0. Reference the package directly from the project to select a different version. \r\n CityInfo -> Microsoft.EntityFrameworkCore.Tools.DotNet 2.0.1 -> Microsoft.NETCore.App (>= 2.0.3) \r\n CityInfo -> Microsoft.NETCore.App (>= 2.0.0)",
+      "libraryId": "Microsoft.NETCore.App",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }

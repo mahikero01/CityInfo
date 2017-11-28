@@ -52,3 +52,105 @@
 2017-11-28 09:52:51.9171|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 326.0486ms 204 
 2017-11-28 11:06:10.9719|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
 2017-11-28 11:06:11.5710|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 434.6619ms 404 text/plain
+2017-11-28 14:48:05.7773|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/testdatabase  
+2017-11-28 14:48:06.7564|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-11-28 14:48:21.7369|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo) in 15533.6592ms
+2017-11-28 14:48:22.1019|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2017-11-28 14:48:22.1349|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-11-28 14:48:22.1349|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo) in 11.3608ms
+2017-11-28 14:48:22.3949|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2017-11-28 14:48:22.6309|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL9MJ3OMQ84J", Request id "0HL9MJ3OMQ84J:00000001": An unhandled exception was thrown by the application.
+2017-11-28 14:48:22.6689|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16903.7832ms 500 
+2017-11-28 14:53:55.5712|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/testdatabase  
+2017-11-28 14:53:56.3773|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-11-28 14:53:58.7646|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2017-11-28 14:53:58.7766|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-11-28 14:53:58.7836|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2017-11-28 14:53:58.7976|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo) in 2873.9607ms
+2017-11-28 14:53:58.8246|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3262.3833ms 200 
+2017-11-28 14:59:55.5622|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/testdatabase  
+2017-11-28 14:59:56.6123|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-11-28 15:00:00.3557|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2017-11-28 15:00:00.3677|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-11-28 15:00:00.3677|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2017-11-28 15:00:00.3837|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo) in 4399.9041ms
+2017-11-28 15:00:00.4267|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4875.1571ms 200 
+2017-11-28 15:08:51.7048|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/testdatabase  
+2017-11-28 15:08:52.5149|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-11-28 15:08:52.8850|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2017-11-28 15:08:52.8960|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-11-28 15:08:52.8960|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2017-11-28 15:08:52.9100|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo) in 853.3134ms
+2017-11-28 15:08:52.9330|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1238.2214ms 200 
+2017-11-28 15:10:38.6525|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/testdatabase  
+2017-11-28 15:10:39.4376|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-11-28 15:10:54.2441|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo) in 15225.2235ms
+2017-11-28 15:10:54.6401|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2017-11-28 15:10:54.6561|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-11-28 15:10:54.6641|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo) in 8.3693ms
+2017-11-28 15:10:54.8312|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2017-11-28 15:10:55.0922|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL9MJGBT7H5G", Request id "0HL9MJGBT7H5G:00000001": An unhandled exception was thrown by the application.
+2017-11-28 15:10:55.1592|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16514.7006ms 500 
+2017-11-28 15:13:41.6938|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/testdatabase  
+2017-11-28 15:13:42.4679|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-11-28 15:13:42.8450|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2017-11-28 15:13:42.8550|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-11-28 15:13:42.8550|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2017-11-28 15:13:42.8690|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo) in 861.2989ms
+2017-11-28 15:13:42.8910|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1205.7703ms 200 
+2017-11-28 15:24:37.6284|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-11-28 15:24:38.3885|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 727.5253ms 404 text/plain
+2017-11-28 15:24:49.8576|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/testdatabase  
+2017-11-28 15:24:50.6867|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-11-28 15:24:51.3048|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2017-11-28 15:24:51.3268|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-11-28 15:24:51.3418|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2017-11-28 15:24:51.3418|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo) in 1442.1401ms
+2017-11-28 15:24:51.3678|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1521.6943ms 200 
+2017-11-28 15:30:06.3903|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/testdatabase  
+2017-11-28 15:30:07.4014|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-11-28 15:30:07.7824|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2017-11-28 15:30:07.8254|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2017-11-28 15:30:07.8254|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2017-11-28 15:30:07.8254|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2017-11-28 15:30:07.8384|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2017-11-28 15:30:07.8534|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-11-28 15:30:07.8534|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2017-11-28 15:30:07.8694|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo) in 1044.4886ms
+2017-11-28 15:30:07.8964|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1518.6387ms 200 
+2017-11-28 15:49:48.1145|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/testdatabase  
+2017-11-28 15:49:48.8955|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-11-28 15:49:49.2366|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2017-11-28 15:49:49.2846|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2017-11-28 15:49:49.2846|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2017-11-28 15:49:49.2986|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2017-11-28 15:49:49.2986|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2017-11-28 15:49:49.3276|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-11-28 15:49:49.3276|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2017-11-28 15:49:49.3536|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo) in 870.0586ms
+2017-11-28 15:49:49.3936|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1289.9267ms 200 
