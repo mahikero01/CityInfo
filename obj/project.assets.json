@@ -12976,11 +12976,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sarmife\\Sandbox\\CityInfo\\CityInfo.csproj",
+      "projectUniqueName": "c:\\Users\\sarmife\\Sandbox\\CityInfo\\CityInfo.csproj",
       "projectName": "CityInfo",
-      "projectPath": "C:\\Users\\sarmife\\Sandbox\\CityInfo\\CityInfo.csproj",
+      "projectPath": "c:\\Users\\sarmife\\Sandbox\\CityInfo\\CityInfo.csproj",
       "packagesPath": "C:\\Users\\sarmife\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sarmife\\Sandbox\\CityInfo\\obj\\",
+      "outputPath": "c:\\Users\\sarmife\\Sandbox\\CityInfo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

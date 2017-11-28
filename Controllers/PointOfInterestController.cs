@@ -221,7 +221,7 @@ namespace CityInfo.API.Controllers
             city.PointsOfInterest.Remove(pointOfInterestFromStore);
 
             //use the service injected
-            _mailService.Send("Pint of interest deleted",
+            _mailService.Send("Point of interest deleted",
                     $"Point of interest {pointOfInterestFromStore.Name} with id {pointOfInterestFromStore.Id} was deleted.");
             //use the service injected
 
