@@ -13,3 +13,10 @@ $ dotnet add package Microsoft.AspNetCore.Mvc.Formatters.Xml --version 2.0.1  ->
 
 $ dotnet add package NLog.Extensions.Logging --version 1.0.0-rtm-rc2  -> file logger
 
+
+
+To change deployment go to 
+Debug -> Open configurations -> "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development" or "Production"}
+
+
