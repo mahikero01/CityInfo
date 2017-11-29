@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Microsoft.EntityFrameworkCore.Metadata;
+using System;
+using System.Collections.Generic;
 
-namespace CityInfo.API.Migrations
+namespace CityInfo.Migrations
 {
-    public partial class CityInfoDBInitialMigration : Migration
+    public partial class NameOfTheMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

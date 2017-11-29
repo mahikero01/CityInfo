@@ -68,8 +68,8 @@ namespace CityInfo
             //adding a customized service
 
             //adding Entity Framework Service
-            var connectionString = @"Server=B04SQLD50\JHEADEV8R2; Database=dbbtCARSAp1; Trusted_Connection=True";
-            //var connectionString = @"Data Source=B04SQLD50\JHEADEV8R2; Initial Catalog=dbbtCARSAp1; Integrated Security=True";
+            //var connectionString = @"Server=B04SQLD50\JHEADEV8R2; Database=dbbtCARSAp1; Trusted_Connection=True";
+            var connectionString = @"Data Source=B04SQLD50\JHEADEV8R2; Initial Catalog=dbbtCARSAp1; Integrated Security=True";
             services.AddDbContext<CityInfoContext>(o => o.UseSqlServer(connectionString));
             //adding Entity Framework Service
         }
