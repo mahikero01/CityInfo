@@ -71,6 +71,10 @@ namespace CityInfo.API
             var connectionString = Startup.Configuration["connectionStrings:cityInfoDBConnectionString"];
             services.AddDbContext<CityInfoContext>(o => o.UseSqlServer(connectionString));
             //adding Entity Framework Service
+
+            //adding a repository pattern , with this apporach mock a service will be easy
+            services.AddScoped<ICityInfoRepository, CityInfoRepository>();
+            //adding a repository pattern, with this apporach mock a service will be easy
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
