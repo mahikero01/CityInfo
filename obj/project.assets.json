@@ -12972,23 +12972,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sarmife\\.nuget\\packages\\": {},
+    "C:\\Users\\Mahikero01\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sarmife\\Sandbox\\CityInfo\\CityInfo.csproj",
+      "projectUniqueName": "D:\\SandBox\\CityInfo\\CityInfo.csproj",
       "projectName": "CityInfo",
-      "projectPath": "C:\\Users\\sarmife\\Sandbox\\CityInfo\\CityInfo.csproj",
-      "packagesPath": "C:\\Users\\sarmife\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sarmife\\Sandbox\\CityInfo\\obj\\",
+      "projectPath": "D:\\SandBox\\CityInfo\\CityInfo.csproj",
+      "packagesPath": "C:\\Users\\Mahikero01\\.nuget\\packages\\",
+      "outputPath": "D:\\SandBox\\CityInfo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\sarmife\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Mahikero01\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
