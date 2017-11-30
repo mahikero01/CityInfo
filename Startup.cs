@@ -101,9 +101,24 @@ namespace CityInfo.API
             cityInfoContext.EnsureSeedDataForContext();
             //use for seeding
 
+            //which will print stus page in html format
             app.UseStatusCodePages();
+            //which will print stus page in html format
+            
+            //Use Auto Mapper
+            AutoMapper.Mapper.Initialize(
+                cfg =>
+                {
+                    cfg.CreateMap<Entities.City, Models.CityWithoutPointsOfInterestDTO>();
+                    cfg.CreateMap<Entities.City, Models.CityDto>();
+                    cfg.CreateMap<Entities.PointOfInterest, Models.PointOfInterestDto>();
+                }
+            );
+            //Use Auto Mapper
 
+            //use MVC
             app.UseMvc();
+            //use MVC
 
 
             // app.Run(async (context) =>

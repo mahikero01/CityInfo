@@ -29,7 +29,7 @@ namespace CityInfo.API.Services
         {
             if (includePointsOfInterest)
             {
-                return _context.Cities.Include(c => c.pointOfInterest)
+                return _context.Cities.Include(c => c.PointsOfInterest)
                         .Where(c => c.Id == cityId).FirstOrDefault();
             }
 

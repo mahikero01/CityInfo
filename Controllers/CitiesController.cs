@@ -1,3 +1,4 @@
+using AutoMapper;
 using CityInfo.API.Services;
 using CityInfo.API.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -22,17 +23,8 @@ namespace CityInfo.API.Controllers
             //return Ok(CitiesDatastore.Current.Cities);
 
             var cityEntities = _cityInfoRepository.GetCities();
-            var results = new List<CityWithoutPointsOfInterestDTO>();
+            var results = Mapper.Map<IEnumerable<CityWithoutPointsOfInterestDTO>>(cityEntities);
 
-            foreach (var cityEntity in cityEntities)
-            {
-                results.Add(new CityWithoutPointsOfInterestDTO{
-                    Id = cityEntity.Id,
-                    Name = cityEntity.Name,
-                    Description = cityEntity.Description
-                });
-            }
-            
             return Ok(results);
         }
 
@@ -57,25 +49,14 @@ namespace CityInfo.API.Controllers
 
             if (includePointsOfInterest)
             {
-                var cityResult = new CityDto(){
-                    Id = city.Id,
-                    Name = city.Name,
-                    Description = city.Description
-                };
-
-                foreach (var poi in city.pointOfInterest)
-                {
-                    cityResult.PointsOfInterest.Add
-                    (
-                        new PointOfInterestDto()
-                        {
-                            Id = poi.Id,
-                            Name = poi.Name,
-                            Description = poi.Description
-                        }
-                    );
-                }
+                var cityResult = Mapper.Map<CityDto>(city);
+                
+                return Ok(cityResult);
             }
+
+            var cityWithoutPointsOfInterestResult = Mapper.Map<CityWithoutPointsOfInterestDTO>(city);
+
+            return Ok(cityWithoutPointsOfInterestResult);      
         }
     }
 }
