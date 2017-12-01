@@ -120,7 +120,22 @@ namespace CityInfo.API
             //Use Auto Mapper
 
             //use MVC
-            app.UseMvc();
+            app.UseMvc(
+                routes => 
+                {
+                    routes.MapRoute
+                    (
+                        name: "default",
+                        template: "{controller=Home}/{action=Index}/{id?}"
+                    );
+                } 
+            
+            );
+
+
+
+
+
             //use MVC
 
 

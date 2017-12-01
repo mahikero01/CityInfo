@@ -1,0 +1,73 @@
+2017-12-01 11:59:34.8655|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2017-12-01 11:59:57.4109|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 11:59:58.0849|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 674.9281ms 404 text/plain
+2017-12-01 11:59:59.1090|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2017-12-01 11:59:59.1110|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.7243ms 404 text/plain
+2017-12-01 12:00:07.1218|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/home/index  
+2017-12-01 12:00:11.5142|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4323.7716ms 404 text/plain
+2017-12-01 12:05:44.8620|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2017-12-01 12:05:58.1033|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/home/index  
+2017-12-01 12:05:59.3894|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 12:06:03.3538|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 12:06:03.4528|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 4066.4396ms
+2017-12-01 12:06:03.5729|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5467.7867ms 200 text/html; charset=utf-8
+2017-12-01 12:09:40.8802|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2017-12-01 12:10:07.4944|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 12:10:07.8025|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 12:10:12.1809|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 12:10:16.7383|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 8939.7278ms
+2017-12-01 12:10:16.7443|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9250.2171ms 200 text/html; charset=utf-8
+2017-12-01 12:10:25.7055|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Home/about  
+2017-12-01 12:10:25.8935|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.About (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 12:10:26.2235|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/About.cshtml.
+2017-12-01 12:10:26.2285|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.About (CityInfo) in 335.2482ms
+2017-12-01 12:10:26.2285|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 524.4377ms 200 text/html; charset=utf-8
+2017-12-01 12:10:40.1469|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/cities  
+2017-12-01 12:11:04.6533|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-12-01 12:11:04.6533|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2017-12-01 12:11:04.6533|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2017-12-01 12:11:04.6533|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2017-12-01 12:11:04.6533|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2017-12-01 12:11:04.6533|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCities (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 12:11:04.7143|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name]
+FROM [Cities] AS [c]
+ORDER BY [c].[Name]
+2017-12-01 12:11:04.8633|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-12-01 12:11:05.1344|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCities (CityInfo) in 483.3348ms
+2017-12-01 12:11:07.3006|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27152.273ms 200 application/json; charset=utf-8
+2017-12-01 12:54:45.8763|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2017-12-01 12:55:54.1631|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 12:55:54.5352|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 12:56:00.8478|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 12:56:01.6899|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 7168.5846ms
+2017-12-01 12:56:01.6899|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7535.3777ms 200 text/html; charset=utf-8
