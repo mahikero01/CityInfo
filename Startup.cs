@@ -119,6 +119,10 @@ namespace CityInfo.API
             );
             //Use Auto Mapper
 
+            //enable use js and css files and icons
+            app.UseStaticFiles();
+            //enable use js and css files and icons
+
             //use MVC
             app.UseMvc(
                 routes => 

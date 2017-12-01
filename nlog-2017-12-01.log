@@ -71,3 +71,279 @@ END
 2017-12-01 12:56:00.8478|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
 2017-12-01 12:56:01.6899|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 7168.5846ms
 2017-12-01 12:56:01.6899|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7535.3777ms 200 text/html; charset=utf-8
+2017-12-01 13:07:05.7273|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2017-12-01 13:07:17.6445|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 13:07:18.2475|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 13:07:23.8001|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 13:07:24.5852|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 6344.7741ms
+2017-12-01 13:07:24.5952|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6950.8324ms 200 text/html; charset=utf-8
+2017-12-01 13:07:33.3660|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/cities  
+2017-12-01 13:07:33.3810|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-12-01 13:07:33.3810|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2017-12-01 13:07:33.3810|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2017-12-01 13:07:33.3810|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2017-12-01 13:07:33.3810|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2017-12-01 13:07:33.3930|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCities (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 13:07:33.5141|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name]
+FROM [Cities] AS [c]
+ORDER BY [c].[Name]
+2017-12-01 13:07:33.6621|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-12-01 13:07:34.0201|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCities (CityInfo) in 641.0125ms
+2017-12-01 13:07:34.0201|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 660.203ms 200 application/json; charset=utf-8
+2017-12-01 13:19:13.1848|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2017-12-01 13:19:26.9462|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 13:19:27.2260|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 13:19:32.3714|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 13:19:51.4300|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 24223.9151ms
+2017-12-01 13:19:51.4400|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 24513.5209ms 200 text/html; charset=utf-8
+2017-12-01 13:20:41.0403|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 13:20:41.0443|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 13:20:41.0443|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 13:20:41.0443|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 9.3561ms
+2017-12-01 13:20:41.0573|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 17.1515ms 200 text/html; charset=utf-8
+2017-12-01 13:20:41.2121|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2017-12-01 13:20:41.2121|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5.6094ms 404 text/plain
+2017-12-01 13:21:15.9778|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 13:21:16.0128|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 13:21:16.0128|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 13:21:16.0228|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 19.6421ms
+2017-12-01 13:21:16.0228|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.3888ms 200 text/html; charset=utf-8
+2017-12-01 13:21:17.5367|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2017-12-01 13:21:17.5367|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.7951ms 404 text/plain
+2017-12-01 13:24:57.2378|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2017-12-01 13:26:23.1466|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 13:26:23.4406|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 13:26:29.7153|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 13:26:30.6741|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 7237.1672ms
+2017-12-01 13:26:30.6801|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7536.3494ms 200 text/html; charset=utf-8
+2017-12-01 13:26:31.4750|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/wwwroot/favicon.ico  
+2017-12-01 13:26:31.4750|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8.4192ms 404 text/plain
+2017-12-01 13:34:37.7310|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2017-12-01 13:34:56.2120|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 13:34:56.4070|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 13:35:00.6440|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 13:35:01.4700|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 4963.2649ms
+2017-12-01 13:35:01.5000|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5264.4352ms 200 text/html; charset=utf-8
+2017-12-01 14:07:11.6220|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2017-12-01 14:07:22.7091|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 14:07:22.9561|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 14:07:27.2215|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 14:07:27.5636|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 4604.3969ms
+2017-12-01 14:07:27.6116|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/CSS/styles.4da4b992e298d619d17e.bundle.css  
+2017-12-01 14:07:27.6156|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.132ms 404 text/plain
+2017-12-01 14:07:27.6156|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/inline.90289c92bd06819c99b5.bundle.js  
+2017-12-01 14:07:27.6156|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.5702ms 404 text/plain
+2017-12-01 14:07:27.6156|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/polyfills.e6c9a561d870e42829c6.bundle.js  
+2017-12-01 14:07:27.6156|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.9169ms 404 text/plain
+2017-12-01 14:07:27.6156|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/scripts.126c305df19c7537ee62.bundle.js  
+2017-12-01 14:07:27.6156|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.0098ms 404 text/plain
+2017-12-01 14:07:27.6156|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/main.d4dbfb817420fe2abb6f.bundle.js  
+2017-12-01 14:07:27.6316|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.5476ms 404 text/plain
+2017-12-01 14:07:27.6316|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4930.2947ms 200 text/html; charset=utf-8
+2017-12-01 14:07:27.8886|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/polyfills.e6c9a561d870e42829c6.bundle.js  
+2017-12-01 14:07:27.8886|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.3714ms 404 text/plain
+2017-12-01 14:07:27.8966|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/scripts.126c305df19c7537ee62.bundle.js  
+2017-12-01 14:07:27.8966|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.3755ms 404 text/plain
+2017-12-01 14:07:27.8966|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/main.d4dbfb817420fe2abb6f.bundle.js  
+2017-12-01 14:07:27.8966|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.4954ms 404 text/plain
+2017-12-01 14:07:38.4407|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/CSS/styles.4da4b992e298d619d17e.bundle.css  
+2017-12-01 14:07:38.4537|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.7284ms 404 text/plain
+2017-12-01 14:09:01.1769|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 14:09:01.1769|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 14:09:01.7050|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 14:09:01.9090|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 724.2689ms
+2017-12-01 14:09:01.9090|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 738.8121ms 200 text/html; charset=utf-8
+2017-12-01 14:09:01.9770|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/CSS/styles.4da4b992e298d619d17e.bundle.css  
+2017-12-01 14:09:01.9770|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/inline.90289c92bd06819c99b5.bundle.js  
+2017-12-01 14:09:01.9880|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.9399ms 404 text/plain
+2017-12-01 14:09:01.9880|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/polyfills.e6c9a561d870e42829c6.bundle.js  
+2017-12-01 14:09:01.9880|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 0.8777ms 404 text/plain
+2017-12-01 14:09:01.9880|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/scripts.126c305df19c7537ee62.bundle.js  
+2017-12-01 14:09:01.9880|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.1687ms 404 text/plain
+2017-12-01 14:09:01.9880|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/main.d4dbfb817420fe2abb6f.bundle.js  
+2017-12-01 14:09:01.9880|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 0.6785ms 404 text/plain
+2017-12-01 14:09:01.9880|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11.013ms 404 text/plain
+2017-12-01 14:09:02.2790|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/polyfills.e6c9a561d870e42829c6.bundle.js  
+2017-12-01 14:09:02.2820|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.7672ms 404 text/plain
+2017-12-01 14:09:02.2820|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/scripts.126c305df19c7537ee62.bundle.js  
+2017-12-01 14:09:02.2820|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.6378ms 404 text/plain
+2017-12-01 14:09:02.3110|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/main.d4dbfb817420fe2abb6f.bundle.js  
+2017-12-01 14:09:02.3410|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.7672ms 404 text/plain
+2017-12-01 14:09:09.5798|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 14:09:09.5798|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 14:09:09.5798|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 14:09:09.5838|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 2.3455ms
+2017-12-01 14:09:09.5838|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.3589ms 200 text/html; charset=utf-8
+2017-12-01 14:09:09.6078|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/CSS/styles.4da4b992e298d619d17e.bundle.css  
+2017-12-01 14:09:09.6348|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.6848ms 404 text/plain
+2017-12-01 14:09:09.6348|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/inline.90289c92bd06819c99b5.bundle.js  
+2017-12-01 14:09:09.6348|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.2403ms 404 text/plain
+2017-12-01 14:09:09.6348|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/polyfills.e6c9a561d870e42829c6.bundle.js  
+2017-12-01 14:09:09.6348|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.1958ms 404 text/plain
+2017-12-01 14:09:09.6348|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/scripts.126c305df19c7537ee62.bundle.js  
+2017-12-01 14:09:09.6348|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.2513ms 404 text/plain
+2017-12-01 14:09:09.6348|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/main.d4dbfb817420fe2abb6f.bundle.js  
+2017-12-01 14:09:09.6578|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16.5945ms 404 text/plain
+2017-12-01 14:09:09.8428|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/polyfills.e6c9a561d870e42829c6.bundle.js  
+2017-12-01 14:09:09.8428|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.4423ms 404 text/plain
+2017-12-01 14:09:09.8578|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/scripts.126c305df19c7537ee62.bundle.js  
+2017-12-01 14:09:09.8578|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.9607ms 404 text/plain
+2017-12-01 14:09:09.8798|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/main.d4dbfb817420fe2abb6f.bundle.js  
+2017-12-01 14:09:09.8798|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.0676ms 404 text/plain
+2017-12-01 14:10:07.8696|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 14:10:07.8696|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 14:10:07.8696|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 14:10:08.2716|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 395.9766ms
+2017-12-01 14:10:08.2796|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 410.284ms 200 text/html; charset=utf-8
+2017-12-01 14:10:08.3516|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/CSS/styles.4da4b992e298d619d17e.bundle.css  
+2017-12-01 14:10:08.3516|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.0782ms 404 text/plain
+2017-12-01 14:10:08.3516|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/inline.90289c92bd06819c99b5.bundle.js  
+2017-12-01 14:10:08.3516|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.1106ms 404 text/plain
+2017-12-01 14:10:08.3516|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/polyfills.e6c9a561d870e42829c6.bundle.js  
+2017-12-01 14:10:08.3516|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.7432ms 404 text/plain
+2017-12-01 14:10:08.3516|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/scripts.126c305df19c7537ee62.bundle.js  
+2017-12-01 14:10:08.3516|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.0568ms 404 text/plain
+2017-12-01 14:10:08.3657|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/main.d4dbfb817420fe2abb6f.bundle.js  
+2017-12-01 14:10:08.3657|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.3974ms 404 text/plain
+2017-12-01 14:10:08.6787|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/polyfills.e6c9a561d870e42829c6.bundle.js  
+2017-12-01 14:10:08.6787|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.2037ms 404 text/plain
+2017-12-01 14:10:08.6787|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/scripts.126c305df19c7537ee62.bundle.js  
+2017-12-01 14:10:08.6787|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.8657ms 404 text/plain
+2017-12-01 14:10:08.7077|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/main.d4dbfb817420fe2abb6f.bundle.js  
+2017-12-01 14:10:08.7097|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.6599ms 404 text/plain
+2017-12-01 14:20:11.1649|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2017-12-01 14:20:19.6058|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 14:20:19.8488|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 14:20:24.6583|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 14:20:25.3233|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 5475.2424ms
+2017-12-01 14:20:25.3373|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5731.8853ms 200 text/html; charset=utf-8
+2017-12-01 14:20:25.4654|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/CSS/styles.4da4b992e298d619d17e.bundle.css  
+2017-12-01 14:20:25.4714|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/inline.90289c92bd06819c99b5.bundle.js  
+2017-12-01 14:20:25.4714|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/CSS/styles.4da4b992e298d619d17e.bundle.css'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\CSS\styles.4da4b992e298d619d17e.bundle.css'
+2017-12-01 14:20:25.4714|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/polyfills.e6c9a561d870e42829c6.bundle.js  
+2017-12-01 14:20:25.4714|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/Scripts/polyfills.e6c9a561d870e42829c6.bundle.js'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\Scripts\polyfills.e6c9a561d870e42829c6.bundle.js'
+2017-12-01 14:20:25.4714|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/Scripts/inline.90289c92bd06819c99b5.bundle.js'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\Scripts\inline.90289c92bd06819c99b5.bundle.js'
+2017-12-01 14:20:25.4954|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 24.2493ms 200 application/javascript
+2017-12-01 14:20:25.4954|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/scripts.126c305df19c7537ee62.bundle.js  
+2017-12-01 14:20:25.4954|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/Scripts/scripts.126c305df19c7537ee62.bundle.js'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\Scripts\scripts.126c305df19c7537ee62.bundle.js'
+2017-12-01 14:20:25.5124|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/main.d4dbfb817420fe2abb6f.bundle.js  
+2017-12-01 14:20:25.5124|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/Scripts/main.d4dbfb817420fe2abb6f.bundle.js'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\Scripts\main.d4dbfb817420fe2abb6f.bundle.js'
+2017-12-01 14:20:25.5344|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52.9922ms 200 application/javascript
+2017-12-01 14:20:25.5794|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 83.1552ms 200 application/javascript
+2017-12-01 14:20:25.5794|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 116.1639ms 200 text/css
+2017-12-01 14:20:25.8394|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 326.5516ms 200 application/javascript
+2017-12-01 14:20:26.2804|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/CSS/fontawesome-webfont.af7ae505a9eed503f8b8.woff2  
+2017-12-01 14:20:26.2834|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/CSS/fontawesome-webfont.af7ae505a9eed503f8b8.woff2'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\CSS\fontawesome-webfont.af7ae505a9eed503f8b8.woff2'
+2017-12-01 14:20:26.2834|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11.3921ms 200 font/woff2
+2017-12-01 14:20:52.7351|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 14:20:52.7351|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 14:20:52.7401|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 14:20:53.0981|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 360.3429ms
+2017-12-01 14:20:53.1001|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 364.4662ms 200 text/html; charset=utf-8
+2017-12-01 14:20:53.1461|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/CSS/styles.4da4b992e298d619d17e.bundle.css  
+2017-12-01 14:20:53.1461|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/CSS/styles.4da4b992e298d619d17e.bundle.css'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\CSS\styles.4da4b992e298d619d17e.bundle.css'
+2017-12-01 14:20:53.1461|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/inline.90289c92bd06819c99b5.bundle.js  
+2017-12-01 14:20:53.1461|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/Scripts/inline.90289c92bd06819c99b5.bundle.js'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\Scripts\inline.90289c92bd06819c99b5.bundle.js'
+2017-12-01 14:20:53.1461|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/polyfills.e6c9a561d870e42829c6.bundle.js  
+2017-12-01 14:20:53.1461|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/Scripts/polyfills.e6c9a561d870e42829c6.bundle.js'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\Scripts\polyfills.e6c9a561d870e42829c6.bundle.js'
+2017-12-01 14:20:53.1461|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/scripts.126c305df19c7537ee62.bundle.js  
+2017-12-01 14:20:53.1461|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/Scripts/scripts.126c305df19c7537ee62.bundle.js'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\Scripts\scripts.126c305df19c7537ee62.bundle.js'
+2017-12-01 14:20:53.1461|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/main.d4dbfb817420fe2abb6f.bundle.js  
+2017-12-01 14:20:53.1461|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/Scripts/main.d4dbfb817420fe2abb6f.bundle.js'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\Scripts\main.d4dbfb817420fe2abb6f.bundle.js'
+2017-12-01 14:20:53.1461|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.3015ms 200 application/javascript
+2017-12-01 14:20:53.2171|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 66.6564ms 200 application/javascript
+2017-12-01 14:20:53.2681|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 115.5072ms 200 application/javascript
+2017-12-01 14:20:53.3641|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 217.5874ms 200 text/css
+2017-12-01 14:20:53.4382|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 283.8302ms 200 application/javascript
+2017-12-01 14:21:11.3259|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 14:21:11.3259|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 14:21:11.3259|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 14:21:11.6070|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 260.0602ms
+2017-12-01 14:21:11.6720|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/CSS/styles.4da4b992e298d619d17e.bundle.css  
+2017-12-01 14:21:11.6800|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/main.d4dbfb817420fe2abb6f.bundle.js  
+2017-12-01 14:21:11.6720|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/polyfills.e6c9a561d870e42829c6.bundle.js  
+2017-12-01 14:21:11.6720|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/scripts.126c305df19c7537ee62.bundle.js  
+2017-12-01 14:21:11.6720|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Scripts/inline.90289c92bd06819c99b5.bundle.js  
+2017-12-01 14:21:11.9350|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/Scripts/inline.90289c92bd06819c99b5.bundle.js'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\Scripts\inline.90289c92bd06819c99b5.bundle.js'
+2017-12-01 14:21:11.9470|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 274.2023ms 200 application/javascript
+2017-12-01 14:21:11.9350|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/CSS/styles.4da4b992e298d619d17e.bundle.css'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\CSS\styles.4da4b992e298d619d17e.bundle.css'
+2017-12-01 14:21:11.9700|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 297.5938ms 200 text/css
+2017-12-01 14:21:12.0570|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/CSS/fontawesome-webfont.af7ae505a9eed503f8b8.woff2  
+2017-12-01 14:21:12.0570|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/CSS/fontawesome-webfont.af7ae505a9eed503f8b8.woff2'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\CSS\fontawesome-webfont.af7ae505a9eed503f8b8.woff2'
+2017-12-01 14:21:11.9350|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 608.7117ms 200 text/html; charset=utf-8
+2017-12-01 14:21:11.9350|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/Scripts/main.d4dbfb817420fe2abb6f.bundle.js'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\Scripts\main.d4dbfb817420fe2abb6f.bundle.js'
+2017-12-01 14:21:11.9350|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/Scripts/polyfills.e6c9a561d870e42829c6.bundle.js'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\Scripts\polyfills.e6c9a561d870e42829c6.bundle.js'
+2017-12-01 14:21:11.9350|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/Scripts/scripts.126c305df19c7537ee62.bundle.js'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\Scripts\scripts.126c305df19c7537ee62.bundle.js'
+2017-12-01 14:21:12.1190|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 442.006ms 200 application/javascript
+2017-12-01 14:21:12.2170|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 160.2801ms 200 font/woff2
+2017-12-01 14:21:12.2170|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 542.0405ms 200 application/javascript
+2017-12-01 14:21:12.4150|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 735.4474ms 200 application/javascript
+2017-12-01 14:21:18.1736|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/CSS/glyphicons-halflings-regular.448c34a56d699c29117a.woff2  
+2017-12-01 14:21:24.8383|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/CSS/glyphicons-halflings-regular.448c34a56d699c29117a.woff2'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\CSS\glyphicons-halflings-regular.448c34a56d699c29117a.woff2'
+2017-12-01 14:21:24.8383|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6667.0983ms 200 font/woff2
+2017-12-01 14:22:46.3824|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 14:22:46.3824|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 14:22:46.3824|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 14:22:46.3824|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 2.3535ms
+2017-12-01 14:22:46.3824|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8.3301ms 200 text/html; charset=utf-8
+2017-12-01 14:22:47.9696|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2017-12-01 14:22:47.9696|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\favicon.ico'
+2017-12-01 14:22:47.9866|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 20.1148ms 200 image/x-icon
+2017-12-01 14:23:15.9944|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 14:23:15.9944|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 14:23:16.0034|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 14:23:16.3224|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 324.9893ms
+2017-12-01 14:23:16.3224|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 329.4065ms 200 text/html; charset=utf-8
+2017-12-01 14:23:23.9902|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-12-01 14:23:23.9902|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.HomeController.Index (CityInfo) with arguments ((null)) - ModelState is Valid
+2017-12-01 14:23:23.9902|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2017-12-01 14:23:23.9902|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.HomeController.Index (CityInfo) in 3.0643ms
+2017-12-01 14:23:23.9902|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.8117ms 200 text/html; charset=utf-8
+2017-12-01 14:23:24.3432|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2017-12-01 14:23:24.3432|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\favicon.ico'
+2017-12-01 14:23:24.3512|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.6161ms 200 image/x-icon
+2017-12-01 14:23:35.6594|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/CSS/glyphicons-halflings-regular.448c34a56d699c29117a.woff2  
+2017-12-01 14:23:35.6594|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/CSS/glyphicons-halflings-regular.448c34a56d699c29117a.woff2'. Physical path: 'C:\Users\sarmife\Sandbox\CityInfo\wwwroot\CSS\glyphicons-halflings-regular.448c34a56d699c29117a.woff2'
+2017-12-01 14:23:35.6594|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6.2769ms 200 font/woff2
